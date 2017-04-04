@@ -3,16 +3,16 @@ $(function() {
   CMS.init({
 
     // Name of your site or location of logo file, relative to root directory (img/logo.png)
-    siteName: 'My Site',
+    siteName: 'CMS-Kurs',
 
     // Tagline for your site
-    siteTagline: 'Your site tagline',
+    siteTagline: 'Installation, Anpassungen & Templating',
 
     // Email address
-    siteEmail: 'your_email@example.com',
+    siteEmail: 'christoph.pfeiffer@ur.de',
 
     // Name
-    siteAuthor: 'Your Name',
+    siteAuthor: 'Christoph Pfeiffer',
 
     // Navigation items
     siteNavItems: [
@@ -42,14 +42,14 @@ $(function() {
     postsOnUrl: '',
 
     // Site fade speed
-    fadeSpeed: 300,
+    fadeSpeed: 0,
 
     // Site footer text
     footerText: '&copy; ' + new Date().getFullYear() + ' All Rights Reserved.',
 
     // Mode 'Github' for Github Pages, 'Server' for Self Hosted. Defaults
     // to Github
-    mode: 'Github',
+    mode: 'Server',
 
      // If Github mode is set, your Github username and repo name.
     githubUserSettings: {
