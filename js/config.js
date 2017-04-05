@@ -36,13 +36,13 @@ $(function() {
     sortDateOrder: true,
 
     // Posts on Frontpage (blog style)
-    postsOnFrontpage: true,
+    postsOnFrontpage: false,
 
     // Page as Frontpage (static)
-    pageAsFrontpage: '',
+    pageAsFrontpage: 'Home',
 
     // Posts/Blog on different URL
-    postsOnUrl: '',
+    postsOnUrl: 'mitteilungen',
 
     // Site fade speed
     fadeSpeed: 0,

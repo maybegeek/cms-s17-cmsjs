@@ -80,7 +80,17 @@ var CMS = {
 
       // Main view / Frontpage
       '' : function () {
+        if (typeof CMS.settings.pageAsFrontpage === 'undefined' || CMS.settings.pageAsFrontpage === '') {
           CMS.renderPosts();
+        } else {
+          CMS.renderPage(CMS.settings.pageAsFrontpage);
+        }
+      },
+
+
+      // Post list if 'page' is the frontpage
+      '#posts' : function () {
+        CMS.renderPosts();
       },
 
       // Post view / single view
