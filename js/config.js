@@ -16,8 +16,11 @@ $(function() {
 
     // Navigation items
     siteNavItems: [
-      { name: 'Github', href: 'https://github.com/yourname', newWindow: false},
-      { name: 'About'}
+      { name: 'Home'},
+      { name: 'Mitteilungen', href: '#posts', newWindow: false},
+      { name: 'About'},
+      { name: 'Nochwas'},
+      { name: 'UR', href: 'https://www.ur.de/', newWindow: false}
     ],
 
     // Posts folder name
