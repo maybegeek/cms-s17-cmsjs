@@ -137,8 +137,20 @@ var CMS = {
     CMS.posts.forEach(function (post) {
       if (post.id == id) {
 
-        var tpl = $(document.getElementById('post-template')).html(),
-          $tpl = $(tpl);
+
+
+        // This checks if the new post-singleview-template exists,
+        // and if it doesn't falls back to the old way.
+        var templateToUse;
+        if ($(document.getElementById('post-singleview-template')).length == 0) {
+            templateToUse = 'post-template';
+          } else {
+            templateToUse = 'post-singleview-template';
+          }
+        console.log('Template To Use:' + templateToUse)
+        var tpl = $(document.getElementById( templateToUse )).html(),
+        $tpl = $(tpl);
+
 
         $tpl.find('.post-title').html(post.title);
         $tpl.find('.post-date').html((post.date.getUTCMonth() + 1) + '/' + post.date.getUTCDate() + '/' +  post.date.getUTCFullYear());
