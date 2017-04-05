@@ -181,7 +181,7 @@ var CMS = {
     // Delay footer loading while waiting on ajax requests
     setTimeout(function () {
       CMS.settings.footerContainer.fadeIn(CMS.settings.fadeSpeed);
-    }, 800);
+    }, 100);
   },
 
   renderError: function (msg) {
