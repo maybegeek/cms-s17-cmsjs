@@ -45,7 +45,7 @@ $(function() {
     fadeSpeed: 0,
 
     // Site footer text
-    footerText: '&copy; ' + new Date().getFullYear() + ' All Rights Reserved.',
+    footerText: 'Dinge und Sachen ... und Link zum <a href="#">Impressum</a>',
 
     // Mode 'Github' for Github Pages, 'Server' for Self Hosted. Defaults
     // to Github
