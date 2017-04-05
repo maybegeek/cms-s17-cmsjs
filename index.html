@@ -45,7 +45,7 @@
 
   </div>
 
-  <!-- Page View -->
+  <!-- page view -->
   <script id="page-template" type="x-template">
     <article class="page">
       <h1 class="page-title"></h1>
@@ -53,14 +53,27 @@
     </article>
   </script>
 
-  <!-- Post View -->
+  <!-- post list / blog view -->
   <script id="post-template" type="x-template">
-    <article class="post">
+  <article class="post blog row">
+    <div class="title-time-container c7">
+      <h1 class="post-title"></h1>
+      <time class="post-date"></time>
+    </div>
+    <div class="post-content c5"></div>
+  </article>
+  </script>
+
+  <!-- single view -->
+  <template id="post-singleview-template">
+    <article class="post single">
       <h1 class="post-title"></h1>
       <time class="post-date"></time>
       <div class="post-content"></div>
     </article>
-  </script>
+  </template>
+
+
 
   <!-- Error View -->
   <script id="error-template" type="x-template">
